@@ -2,7 +2,7 @@ const express = require("express")
 const { default: mongoose } = require("mongoose")
 const routes = require("./routes");
 
-mongoose.connect("mongodb://shema:password@localhost:27017")
+mongoose.connect("mongodb://localhost:27017")
     .then(() => {
         const app = express();
         app.use(express.json());
